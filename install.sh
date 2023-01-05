@@ -64,7 +64,7 @@ if [ $# -ge 1 ]; then
         path=$(echo $v2ray_id | sed 's/.*\([a-z0-9]\{12\}\)$/\1/g')
     fi
 
-    proxy_site="https://zelikk.blogspot.com"
+    proxy_site="https://tjy-gitnub.github.io"
 
     echo -e "domain: ${domain}"
     echo -e "netstack: ${netstack}"
@@ -275,8 +275,8 @@ if [[ -z $proxy_site ]]; then
     while :; do
         echo -e "请输入 ${magenta}一个正确的 $none ${cyan}网址$none 用来作为 ${cyan}网站的伪装$none , 例如 https://zelikk.blogspot.com"
         echo "Input a camouflage site. When GFW visit your domain, the camouflage site will display."
-        read -p "$(echo -e "(默认site: [${cyan}https://zelikk.blogspot.com${none}]):")" proxy_site
-        [[ -z $proxy_site ]] && proxy_site="https://zelikk.blogspot.com"
+        read -p "$(echo -e "(默认site: [${cyan}https://tjy-gitnub.github.io${none}]):")" proxy_site
+        [[ -z $proxy_site ]] && proxy_site="https://tjy-gitnub.github.io"
 
         case $proxy_site in
         *[#$]*)
