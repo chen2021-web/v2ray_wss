@@ -327,7 +327,7 @@ cat >/usr/local/etc/v2ray/config.json <<-EOF
                 "network": "ws"
             },
             "sniffing": {
-                "enabled": true,
+                "enabled": false,
                 "destOverride": [
                     "http",
                     "tls"
@@ -340,7 +340,7 @@ cat >/usr/local/etc/v2ray/config.json <<-EOF
             "port":1080,
             "protocol":"socks",
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
